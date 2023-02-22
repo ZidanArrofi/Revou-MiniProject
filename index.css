@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  background-color: #fde824e2;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-right: 70px;
+}
+
+.logo img {
+  height: 40px;
+  margin-left: 44px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.menu a:hover {
+  color: #333;
+}
+
+span .home{
+  color: #fde824e2;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spech {
+  order: 1;
+  font-size: 44px;
+  margin-left: 70px;
+}
+
+.spech p{
+  font-size: large;
+  text-align: justify;
+  margin-right: 100px;
+}
+
+.gambar1 {
+  order: 2;
+  width: 550px;
+  margin-right: 70px;
+  margin-top: 25px;
+}
+.section-review{
+  background-color: yellow;
+  align-items: center;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.review {
+  padding: 70px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+ h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 10px;
+  flex-basis: 40%;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.card h3 {
+  margin-top: 20px;
+  margin-bottom: 0;
+
+}
+
+.card p {
+  margin-top: 10px;
+  font-style: italic;
+
+}
+
+
+.hq-card img {
+  width: 200px;
+  object-fit: cover;
+  
+}
+
+.hq-caption {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ 
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  float: left;
+  margin-left: 80px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+input[type="text"], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: yellow;
+}
+
+.form-output{
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  float: left;
+  margin-left: 80px;
+}
+
+.form-output p{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+
+
+

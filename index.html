@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Mini Project Software Engineering | Revou</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#"><img src="Revou.png" alt="Logo" /></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="profile.html">Our Profile</a></li>
+          <li><a href="#review">Review</a></li>
+          <li><a href="#">Message Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home" class="main-content">
+      <div class="spech">
+        <h3>Hi <span class="home" id="user"></span></h3>
+        <h3>Welcome to <span class="home">Revo</span>U</h3>
+        <p>
+          Revou adalah sebuah lembaga pelatihan daring yang menawarkan berbagai
+          macam kelas bootcamp yang berfokus pada kebutuhan industri teknologi
+          digital. Di RevoU kamu akan belajar secara intensif selama 14 minggu
+          dengan berbagai materi dan kegiatan yang akan menambah keterampilan
+          dan kemampuan kamu di bidang teknologi digital.
+        </p>
+      </div>
+      <img src="Programmer.png" alt="programmer" class="gambar1" />
+      <script>
+        let user = prompt("Input Your Name");
+        document.getElementById("user").innerHTML = user;
+      </script>
+    </main>
+    <br /><br />
+    <div class="section-review">
+      <h2>Review</h2>
+      <section class="review" id="review">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YnVzc2luZXNzJTIwbWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="Reviewer 1"
+          />
+          <h3>Reviewer 1</h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id
+            enim vel mauris accumsan iaculis."
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YnVzc2luZXNzJTIwbWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="Reviewer 2"
+          />
+          <h3>Reviewer 2</h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id
+            enim vel mauris accumsan iaculis."
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YnVzc2luZXNzJTIwbWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="Reviewer 3"
+          />
+          <h3>Reviewer 3</h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id
+            enim vel mauris accumsan iaculis."
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <div class="form-section">
+      <form name="message-form" onsubmit="return validateForm()">
+        <label>Nama</label>
+        <input
+          type="text"
+          id="nama"
+          name="full-name"
+          placeholder="Masukkan nama Anda"
+        />
+
+        <label>Tanggal Lahir</label>
+        <input
+          type="date"
+          id="tgl_lahir"
+          name="birth-date"
+          placeholder="Contoh: 01 Januari 2000"
+        />
+
+        <label for="jenis_kelamin">Jenis Kelamin</label>
+        <select id="jenis_kelamin" name="gender">
+          <option>Pilih</option>
+          <option value="pria">Pria</option>
+          <option value="wanita">Wanita</option>
+
+          <label for="pesan">Pesan</label>
+          <textarea
+            id="pesan"
+            name="message"
+            placeholder="Tulis pesan Anda di sini"
+          ></textarea>
+
+          <input type="submit" value="Kirim" /></select>
+      </form>
+    </div>
+    <div class="form-output">
+      <p>Nama: <span id="sender-full-name"></span></p>
+      <br>
+      <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+      <br>
+      <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+      <br>
+      <p>Pesan: <span id="sender-message"></span></p>
+      <br><br><br>
+
+      <script>
+        function validateForm() {
+          let name = document.forms["message-form"]["full-name"].value;
+          let birthDate = document.forms["message-form"]["birth-date"].value;
+          let gender = document.forms["message-form"]["gender"].value;
+          let message = document.forms["message-form"]["message"].value;
+
+          document.getElementById("sender-full-name").innerText = name;
+          document.getElementById("sender-birth-date").innerText = birthDate;
+          document.getElementById("sender-gender").innerText = gender;
+          document.getElementById("sender-message").innerText = message;
+
+          return false;
+        }
+      </script>
+    </div>
+  </body>
+</html>
